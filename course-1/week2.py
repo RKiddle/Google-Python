@@ -79,6 +79,12 @@ print(longest_word("chair", "couch", "table"))
 print(longest_word("bed", "bath", "beyond"))
 print(longest_word("laptop", "notebook", "desktop"))
 
+#8
+
+def sum(x, y):
+		return(x+y)
+print(sum(sum(1,2), sum(3,4)))
+
 #10
 
 def fractional_part(numerator, denominator):
