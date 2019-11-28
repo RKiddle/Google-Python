@@ -22,7 +22,7 @@ print(transform_record("Charlie Rivera,698-746-3357,Web Developer"))
 
 import re
 def multi_vowel_words(text):
-  pattern = ('\B[aeiouAEIOU][aeiouAEIOU][aeiouAEIOU]')
+  pattern = (r'\b[a-zA-Z]*[aeiouAEIOU][aeiouAEIOU][aeiouAEIOU][a-zA-Z]*\b')
   result = re.findall(pattern, text)
   return result
 
