@@ -1,6 +1,6 @@
 import re
 def extract_pid(log_line):
-    regex = r"\[(\d+)\]$"
+    regex = r"\[(\d+)\]{5}"
     result = re.search(regex, log_line)
     if result is None:
         return None
