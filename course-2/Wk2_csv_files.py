@@ -58,7 +58,7 @@ def contents_of_file(filename):
 
   # Open the file
   with open('flowers.csv', mode='r') as csv_file:
-   
+    next(csv_file)
     # Read the rows of the file
     rows = csv.reader(csv_file)
     # Process each row
