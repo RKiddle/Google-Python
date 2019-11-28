@@ -1,6 +1,6 @@
 import re
 def convert_phone_number(phone):
-  result = re.sub(___)
+  result = re.sub("^([\d .-]*), [\d .-]*)$, r"\2 \1", phone)
   return result
 
 print(convert_phone_number("My number is 212-345-9999.")) # My number is (212) 345-9999.
