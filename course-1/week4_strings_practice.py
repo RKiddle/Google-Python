@@ -8,14 +8,15 @@ def is_palindrome(input_string):
   input_string.replace(" ", "")
 
   input_string.lower().strip()
+  input_string = list(input_string)
 # reverse the string
-  rev_str = reversed(input_string)
+  rev_str = input_string[::-1]
 # check if the string is equal to its reverse
-  if list(input_string) == list(rev_str):
+  if input_string == rev_str:
    return True
   else:
    return False
-	
+  	
 
 print(is_palindrome("Never Odd or Even")) # Should be True #my program says false
 print(is_palindrome("abc")) # Should be False
