@@ -38,8 +38,14 @@ def show_letters(word):
 
 show_letters("Hello")
 
-#6
+#6 wrong!
+def multiplication_table(start, stop):
+	for x in list(range(start, stop+1)):
+		for y in list(range(start, stop+1)):
+			print(str(x*y), end=" ")
+		print()
 
+multiplication_table(1, 3)
 #7
 
 def decade_counter():
