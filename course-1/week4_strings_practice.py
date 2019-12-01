@@ -26,7 +26,7 @@ print(is_palindrome("kayak")) # Should be True
 
 def convert_distance(miles):
 	km = miles * 1.6 
-	result = "{} miles equals {} km".format(miles, km)
+	result = "{0} miles equals {1:.1f} km".format(miles, km)
 	return result
 
 print(convert_distance(12)) # Should be: 12 miles equals 19.2 km
