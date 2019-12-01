@@ -28,8 +28,15 @@ print(loop(1,1,1)) # Should be empty
 
 #3
 
-#4
-
+#4 wrong?
+def digits(n):
+	count = 0
+	if n == 0:
+	  return 1
+	while count<n:
+		count += 1
+		n=n/count
+	return count-2
 #5
 
 def show_letters(word):
